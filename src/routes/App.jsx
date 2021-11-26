@@ -2,8 +2,8 @@ import React from 'react';
 import {BrowserRouter, Routes, Route, } from 'react-router-dom';
 import '../styles/global.scss';
 import {Layout} from '../containers/Layout';
-import {Login} from '../containers/Login';
-import { RecoveryPassword } from '../containers/RecoveryPassword';
+import {SignIn} from '../containers/SignIn';
+import { SignUp } from '../containers/SignUp';
 import {NotFound} from '../pages/404';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <Layout>
           <Routes>
 
-              <Route exact path='/' element={<Login/>} />
-              <Route exact path='/login' element={<Login/>} />
-              <Route exact path='/recovery_password' element={<RecoveryPassword/>}/>
+              <Route exact path='/' element={<SignIn/>} />
+              <Route exact path='/signin' element={<SignIn/>} />
+              <Route exact path='/signup' element={<SignUp/>}/>
               <Route path='/404' element={<NotFound/>} />
               <Route path='*' element={<NotFound/>} />
 

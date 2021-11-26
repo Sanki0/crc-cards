@@ -1,14 +1,14 @@
 import React from 'react';
-import '../styles/Login.scss';
+import '../styles/SignIn.scss';
 
-function Login() {
+function SignIn() {
   return (
-    <div className="login">
+    <div className="signin">
       <div className="form-container">
         <h1 className="title">CRC-cards</h1>
         <form action="/" className="form">
           <label for="user" className="label">User</label>
-          <input type="text" id="user" placeholder="" className="input input-password"  required/>
+          <input type="text" id="user" placeholder="" className="input" required/>
 
           <label for="password" className="label">Password</label>
           <input type="password" id="password" placeholder="*********" className="input input-password" required/>
@@ -23,4 +23,4 @@ function Login() {
     </div>
   );
 }
-export {Login};
+export {SignIn};
