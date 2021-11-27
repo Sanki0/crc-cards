@@ -1,28 +1,29 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route, } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import '../styles/global.scss';
-import {Layout} from '../containers/Layout';
-import {SignIn} from '../containers/SignIn';
+import { Layout } from '../containers/Layout';
+import { SignIn } from '../containers/SignIn';
 import { SignUp } from '../containers/SignUp';
-import {NotFound} from '../pages/404';
+import { NotFound } from '../pages/404';
+import {Home} from '../pages/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
-          <Routes>
+        <Routes>
 
-              <Route exact path='/' element={<SignIn/>} />
-              <Route exact path='/signin' element={<SignIn/>} />
-              <Route exact path='/signup' element={<SignUp/>}/>
-              <Route path='/404' element={<NotFound/>} />
-              <Route path='*' element={<NotFound/>} />
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/signin' element={<SignIn />} />
+          <Route exact path='/signup' element={<SignUp />} />
+          <Route path='/404' element={<NotFound />} />
+          <Route path='*' element={<NotFound />} />
 
-      
-          </Routes>
-        </Layout>
+
+        </Routes>
+      </Layout>
     </BrowserRouter>
-    
+
   );
 }
 

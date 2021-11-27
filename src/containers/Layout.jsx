@@ -2,12 +2,12 @@ import React from 'react';
 
 
 function Layout(
-  {children}
+  { children }
 ) {
   return (
-      <div className="Layout">
-        {children}
-      </div>
+    <div className="Layout">
+      {children}
+    </div>
   )
 }
-export {Layout}
+export { Layout }

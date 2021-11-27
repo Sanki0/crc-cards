@@ -8,4 +8,4 @@ function NotFound() {
     </div>
   );
 }
-export {NotFound};
+export { NotFound };
