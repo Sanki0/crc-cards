@@ -19,7 +19,7 @@ function Header() {
 							<a href="/signin">Sign in</a>
 						</li>
 						<li>
-							<a href="/">Feedback</a>
+							<a href="/feedback">Feedback</a>
 						</li>
 					</ul>
 				</div>

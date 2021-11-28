@@ -5,7 +5,9 @@ import { Layout } from '../containers/Layout';
 import { SignIn } from '../containers/SignIn';
 import { SignUp } from '../containers/SignUp';
 import { NotFound } from '../pages/404';
-import {Home} from '../pages/Home';
+import { Home } from '../pages/Home';
+import { Feedback } from '../containers/Feedback';
+
 
 function App() {
   return (
@@ -13,11 +15,13 @@ function App() {
       <Layout>
         <Routes>
 
-          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/' element={<Home />} />
           <Route exact path='/signin' element={<SignIn />} />
           <Route exact path='/signup' element={<SignUp />} />
+          <Route exact path='/feedback' element={<Feedback />} />
           <Route path='/404' element={<NotFound />} />
           <Route path='*' element={<NotFound />} />
+
 
 
         </Routes>
