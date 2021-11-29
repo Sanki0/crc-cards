@@ -6,7 +6,7 @@ function SignUp() {
 	return (
 		<>
 			<Header />
-			<div className="signup">
+			<div className="SignUp">
 				<div className="form-container">
 					<h1 className="title">CRC-cards</h1>
 					<form action="/" className="form">

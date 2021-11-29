@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 function Feedback() {
   return (
     <>
-      <Header/>
+      <Header />
       <div className="feedback">
         <h1>Please give us a feedback</h1>
         <form target="_blank" action="https://formsubmit.co/sebastian_elias_999@hotmail.com" method="POST">
