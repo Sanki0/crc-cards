@@ -12,16 +12,16 @@ function CRC() {
   const [editingColab, setEditingColab] = React.useState("");
 
   React.useEffect(() => {
-    const json = localStorage.getItem("todos");
-    const loadedTodos = JSON.parse(json);
-    if (loadedTodos) {
-      setCards(loadedTodos);
+    const json = localStorage.getItem('cards');
+    const loadedcards = JSON.parse(json);
+    if (loadedcards) {
+      setCards(loadedcards);
     }
   }, []);
 
   React.useEffect(() => {
     const json = JSON.stringify(cards);
-    localStorage.setItem("todos", json);
+    localStorage.setItem('cards', json);
   }, [cards]);
 
   const handleSubmit = (e) => {
@@ -39,7 +39,7 @@ function CRC() {
     setColaboracion("");
   }
 
-  const deleteTodo = (id) => {
+  const deleteCard = (id) => {
     let updateCards = [...cards].filter((card) => card.id !== id);
     setCards(updateCards);
   }
@@ -139,7 +139,7 @@ function CRC() {
               <button onClick={() => setCardEditing(card.id)}>Edit</button>
             )}
 
-            <button onClick={() => deleteTodo(card.id)}>Delete</button>
+            <button onClick={() => deleteCard(card.id)}>Delete</button>
           </div>
         </div>
       ))}
