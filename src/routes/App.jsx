@@ -8,7 +8,7 @@ import { NotFound } from '../pages/404';
 import { Home } from '../pages/Home';
 import { Feedback } from '../pages/Feedback';
 import { User } from '../pages/User';
-
+import { CRC } from '../scripts/CRC'
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route exact path='/signup' element={<SignUp />} />
           <Route exact path='/feedback' element={<Feedback />} />
           <Route exact path='/user' element={<User />} />
+          <Route exact path='/crc' element={<CRC />} />
           <Route path='/404' element={<NotFound />} />
           <Route path='*' element={<NotFound />} />
 
